@@ -1,12 +1,12 @@
 import classes from './MonthStatisticsPage.module.scss';
 
-interface Props {
+interface MonthStatPageProps {
 }
 
-export const MonthStatisticsPage = (props: Props) => {
+export const MonthStatisticsPage: React.FC<MonthStatPageProps> = () => {
     return (
       <main className={classes.month}>
         MonthStatistics Page
       </main>
     );
-}
+};
