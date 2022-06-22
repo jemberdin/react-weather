@@ -1,0 +1,38 @@
+@import '../../css/variables.scss';
+
+.today-weather {
+    padding: 2rem;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius-md;
+}
+
+.today-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .temperature {
+        font-size: 9.6rem;
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    .day {
+        font-size: 4rem;
+        color: $color-black;
+    }
+
+    svg {
+        width: 11.9rem;
+        height: 11.9rem;
+      }
+}
+
+.today-bottom {
+    .time, .location {
+        font-size: 2.5rem;
+        color: $secondary-color;
+    }
+}

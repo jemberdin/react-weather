@@ -1,0 +1,17 @@
+@import '../../css/variables.scss';
+
+.today-info {
+    position: relative;
+    padding: 4rem;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius-md;
+    background-color: $color-white;
+}
+
+.cloud {
+    position: absolute;
+    width: 61%;
+    height: auto;
+    top: 0;
+    right: 0;
+}

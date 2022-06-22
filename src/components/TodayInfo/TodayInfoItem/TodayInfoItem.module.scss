@@ -1,0 +1,34 @@
+@import '../../../css/variables.scss';
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+    .icon-box {
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        box-shadow: $box-shadow-icon;
+    }
+
+    .name, .value {
+        font-size: 1.4rem;
+    }
+
+    .name {
+        color: $secondary-color;
+    }
+
+    .value {
+        color: $color-black;
+    }
+}

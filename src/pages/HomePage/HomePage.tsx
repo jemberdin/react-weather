@@ -1,3 +1,5 @@
+import { TodayInfo } from '../../components/TodayInfo/TodayInfo';
+import { TodayWeather } from '../../components/TodayWeather/TodayWeather';
 import classes from './HomePage.module.scss';
 
 interface HomePageProps {
@@ -6,7 +8,11 @@ interface HomePageProps {
 export const HomePage: React.FC<HomePageProps> = () => {
     return (
       <main className={classes.home}>
-        Home Page
+        <section className={classes.wrapper}>
+          <TodayWeather />
+          <TodayInfo />
+        </section>
+        
       </main>
     );
 };
