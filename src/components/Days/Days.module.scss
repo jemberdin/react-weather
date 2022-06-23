@@ -1,0 +1,11 @@
+@import '../../css/variables.scss';
+
+.days {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 2rem;
+    box-shadow: $box-shadow;
+    border-radius: 0 0 $border-radius-md $border-radius-md;
+    background-color: $color-white;
+}
