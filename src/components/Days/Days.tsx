@@ -1,4 +1,6 @@
+import { Fragment } from 'react';
 import { Card } from '../Card/Card';
+import { Tabs } from '../Tabs/Tabs';
 import classes from './Days.module.scss';
 
 export interface Day {
@@ -71,10 +73,13 @@ const days: Day[] = [
 
 export const Days: React.FC = () => {
     return (
-        <div className={classes.days}>
-            {days.map(day => (
-                <Card key={day.date} day={day} />
-            ))}
-        </div>
+        <Fragment>
+            <Tabs />
+            <div className={classes.days}>
+                {days.map(day => (
+                    <Card key={day.date} day={day} />
+                ))}
+            </div>
+        </Fragment>
     );
 };
