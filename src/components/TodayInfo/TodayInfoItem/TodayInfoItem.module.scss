@@ -16,7 +16,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $color-white;
         box-shadow: $box-shadow-icon;
     }
 
@@ -29,6 +28,6 @@
     }
 
     .value {
-        color: $color-black;
+        color: var(#{--text-color-default});
     }
 }

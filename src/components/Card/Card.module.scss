@@ -6,12 +6,12 @@
     flex-direction: column;
     padding: 1rem;
     border-radius: $border-radius-sm;
-    background-color: $card-background-light;
+    background-color: var(#{--card-background-default});
     cursor: pointer;
 
     .weekday {
         font-size: 1.8rem;
-        color: $color-black;
+        color: var(#{--text-color-default});
         margin-bottom: 0.7rem;
     }
 
@@ -27,7 +27,7 @@
 
     .temp-day {
         font-size: 1.8rem;
-        color: $color-black;
+        color: var(#{--text-color-default});
     }
 
     .temp-night {
@@ -38,10 +38,10 @@
 
     .info {
         font-size: 1.3rem;
-        color: $color-black;
+        color: var(#{--text-color-default});
     }
 
     &:hover {
-        box-shadow: $card-box-shadow-light;
+        box-shadow: var(#{--card-box-shadow-default})
     }
 }

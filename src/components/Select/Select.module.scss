@@ -3,8 +3,9 @@
 .select {
     width: 19.4rem;
     height: 3.7rem;
-    background-color: rgba($primary-color, 0.2);
+    background-color: var(#{--card-background-default});
     border: none;
     border-radius: $border-radius-sm;
     padding: 0.9rem 2rem;
+    color: var(#{--text-color-default});
 }

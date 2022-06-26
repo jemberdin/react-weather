@@ -2,7 +2,7 @@
 
 .today-weather {
     padding: 2rem;
-    background-color: $color-white;
+    background-color: var(#{--component-background-default});
     box-shadow: $box-shadow;
     border-radius: $border-radius-md;
 }
@@ -21,7 +21,7 @@
 
     .day {
         font-size: 4rem;
-        color: $color-black;
+        color: var(#{--text-color-default});
     }
 
     svg {

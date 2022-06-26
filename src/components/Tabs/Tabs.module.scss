@@ -15,8 +15,8 @@
         padding: 0.9rem 2rem;
         border-radius: 0.5rem;
         font-size: 1.8rem;
-        color: $color-black;
-        background-color: $color-white;
+        color: var(#{--text-color-default});
+        background-color: var(#{--component-background-default});
         box-shadow: $box-shadow;
         cursor: pointer;
     }

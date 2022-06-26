@@ -1,3 +1,5 @@
+@import '../../css/variables.scss';
+
 .header {
     display: flex;
     align-items: center;
@@ -22,4 +24,9 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.5rem;
+    color: $primary-color;
+}
+
+.theme svg {
+    cursor: pointer;
 }

@@ -1,3 +1,4 @@
+import { Theme, useThemeContext } from '../../context/theme-context';
 import { Select } from '../Select/Select';
 import { SvgSelector } from '../SvgSelector/SvgSelector';
 import classes from './Header.module.scss';
@@ -6,6 +7,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = () => {
+    const { theme, changeTheme } = useThemeContext();
 
     const options = [
         {value: 'city-1', label: 'Tallinn'},
@@ -14,6 +16,11 @@ export const Header: React.FC<HeaderProps> = () => {
     ];
 
     const onChangeHandler = () => {};
+
+    const changeThemeHandler = () => {
+        const payload = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
+        changeTheme(payload);
+    };
 
     return (
       <header className={classes.header}>
@@ -24,7 +31,7 @@ export const Header: React.FC<HeaderProps> = () => {
             <div className={classes.title}>React weather</div>
         </div>
         <div className={classes.wrapper}>
-            <div className={classes.theme}>
+            <div className={classes.theme} onClick={changeThemeHandler}>
                 <SvgSelector id='change-theme'/>
             </div>
             <div className={classes.select}>
